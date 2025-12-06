@@ -257,8 +257,8 @@ with st.sidebar:
     
     with col2:
         st.subheader("Exchange Rate & Customs")
-        exchange_rate = st.number_input("USD to GNF Rate", value=st.session_state.inputs['exchange_rate'], min_value=1.0)
-        customs_pct = st.number_input("Customs %", value=st.session_state.inputs['customs_percent'], min_value=0.0)
+        exchange_rate = st.number_input("USD to GNF Rate", value=float(st.session_state.inputs['exchange_rate']), min_value=1.0)
+customs_pct = st.number_input("Customs %", value=float(st.session_state.inputs['customs_percent']), min_value=0.0)
         st.session_state.inputs['exchange_rate'] = exchange_rate
         st.session_state.inputs['customs_percent'] = customs_pct
     
