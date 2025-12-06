@@ -4,11 +4,6 @@ import numpy as np
 import json
 from datetime import datetime
 import io
-from reportlab.lib.pagesizes import letter
-from reportlab.lib import colors
-from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, Spacer, PageBreak
-from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
-from reportlab.lib.units import inch
 import plotly.express as px
 import plotly.graph_objects as go
 
